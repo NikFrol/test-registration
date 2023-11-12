@@ -4,9 +4,10 @@ import styles from './button.module.css';
 
 interface Props {
     text: string;
+    onClick: () => void;
 }
-export function Button({ text }: Props) {
+export function Button({ text, onClick}: Props) {
     return (
-        <button className={styles.button}>{text}</button>
+        <button className={styles.button} onClick={onClick}>{text}</button>
     )
 }

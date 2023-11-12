@@ -1,0 +1,11 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    margin-top: 250px;
+}
+
+.registration__info {
+    width: 50%;
+}

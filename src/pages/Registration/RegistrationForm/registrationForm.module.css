@@ -1,0 +1,29 @@
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+
+    gap: 57px;
+}
+
+.registrationForm__title {
+    color: #000;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.registrationForm__inputs {
+    display: flex;
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+.registrationForm__info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 75px;
+}

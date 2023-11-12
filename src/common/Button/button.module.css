@@ -5,6 +5,8 @@
     align-items: center;
     gap: 10px;
 
+    max-width: 200px;
+
     border-radius: 5px;
     border: 1.5px solid #35694F;
     background-color: #35694F;

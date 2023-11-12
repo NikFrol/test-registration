@@ -1,0 +1,40 @@
+.checkbox {
+  display: flex;
+  flex-direction: row;
+
+  gap: 11px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkbox__label {
+  display: flex;
+  width: 21.5px;
+  height: 21px;
+  padding: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 3px;
+  border: 1.5px solid #35694F;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--form-background-hover, #E3F9EE);
+  }
+}
+
+.checkbox__label_checked {
+  background: #FFF;
+
+  &:hover {
+    background-color: #35694F;
+  }
+}
