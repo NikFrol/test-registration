@@ -31,6 +31,10 @@
   }
 }
 
+.checkbox__label_warning {
+  border: 1.5px solid red;
+}
+
 .checkbox__label_checked {
   background: #FFF;
 

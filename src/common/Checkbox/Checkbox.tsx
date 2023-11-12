@@ -5,22 +5,22 @@ import styles from './checkbox.module.css';
 interface Props {
     text?: string;
     checked: boolean;
+    isWarning?: boolean;
     change: (value: boolean) => void;
 }
 
-export function Checkbox({ text, checked, change }: Props) {
+export function Checkbox({ text, checked, isWarning, change }: Props) {
     const [isChecked, setIsChecked] = useState(checked);
     const [isHoverChecked, setIsHoverChecked] = useState(false);
 
     const onChange = () => {
-        console.log(isChecked);
         change && change(!isChecked);
         setIsChecked(!isChecked)
     }
     return (
         <div className={styles.checkbox}>
             <label
-                className={`${styles.checkbox__label} ${isChecked ? styles.checkbox__label_checked : ''}`}
+                className={`${styles.checkbox__label} ${isChecked ? styles.checkbox__label_checked : ''} ${isWarning && styles.checkbox__label_warning}`}
                 onClick={onChange}
                 onMouseOver={() => setIsHoverChecked(isChecked && true)}
                 onMouseLeave={() => setIsHoverChecked(false)}

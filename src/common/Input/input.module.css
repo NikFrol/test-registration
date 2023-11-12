@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 13px;
+
+    position: relative;
 }
 
 .input {
@@ -28,11 +30,31 @@
     }
 }
 
+.input_warning {
+    border: 1.5px solid var(--error-data, #F00);
+}
+
 .input__label {
     color: #000;
 
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+}
+
+.input__warningMessage {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    position: absolute;
+    bottom: -30%;
+
+    color: var(--error-data, #F00);
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }
