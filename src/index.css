@@ -1,17 +1,12 @@
+@import '@fontsource/roboto';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   background: #E3F9EE;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 * {
@@ -29,23 +24,6 @@ body,
 
 #index {
   position: relative;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: 'Exo-2';
-  font-weight: bold;
-  font-size: 24px;
-  margin: 24px 0;
 }
 
 input::-webkit-input-placeholder {
@@ -80,6 +58,14 @@ input:focus:-ms-input-placeholder {
   opacity: 0;
 }
 
+input {
+  outline: none;
+}
+
+input:focus {
+  border: 3px solid #35694F;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -103,6 +89,14 @@ button {
   border: none;
   background: transparent;
   cursor: pointer;
+
+  color: #FFF;
+
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .wrapper {
