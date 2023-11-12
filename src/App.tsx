@@ -1,12 +1,11 @@
 import React from 'react';
+import AppRouter from './router/Router';
 import styles from './app.module.css';
-import { Button, Input } from './common';
 
 function App() {
   return (
     <div className={styles.app}>
-      <Input label='Name'/>
-      <Button text='Start the Course' />
+      <AppRouter />
     </div>
   );
 }

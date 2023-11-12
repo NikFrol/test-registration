@@ -1,3 +1,22 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "",
+      "email": "",
+      "isAgreeEmailUpdate": false,
+      "id": 1
+    },
+    {
+      "name": "asdasd",
+      "email": "asdasd",
+      "isAgreeEmailUpdate": false,
+      "id": 2
+    },
+    {
+      "name": "asdasd",
+      "email": "asdasd",
+      "isAgreeEmailUpdate": false,
+      "id": 3
+    }
+  ]
 }

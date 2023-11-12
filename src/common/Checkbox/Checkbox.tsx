@@ -3,16 +3,18 @@ import React, { useState } from "react";
 import styles from './checkbox.module.css';
 
 interface Props {
-    change?: () => void;
     text?: string;
+    checked: boolean;
+    change: (value: boolean) => void;
 }
 
-export function Checkbox({ text, change }: Props) {
-    const [isChecked, setIsChecked] = useState(false);
+export function Checkbox({ text, checked, change }: Props) {
+    const [isChecked, setIsChecked] = useState(checked);
     const [isHoverChecked, setIsHoverChecked] = useState(false);
 
     const onChange = () => {
-        change && change();
+        console.log(isChecked);
+        change && change(!isChecked);
         setIsChecked(!isChecked)
     }
     return (
@@ -25,7 +27,7 @@ export function Checkbox({ text, change }: Props) {
             >
                 {isChecked &&
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6.5L4.5 10L10.5 1" stroke={isHoverChecked ? '#FFF':'#35694F'} stroke-width="2.5" />
+                        <path d="M1 6.5L4.5 10L10.5 1" stroke={isHoverChecked ? '#FFF' : '#35694F'} strokeWidth="2.5" />
                     </svg>
                 }
 
